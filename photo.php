@@ -1,8 +1,8 @@
 
-    <script src="../docs/js/jquery.min.js"></script>
+    <script src="docs/js/jquery.min.js"></script>
 
 
-    <link rel="stylesheet" href="../docs/basic.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="docs/basic.css" crossorigin="anonymous">
 
 <script src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
 <style type="text/css">
