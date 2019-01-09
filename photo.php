@@ -27,8 +27,8 @@ body{
 <div style="float:left; width:30%;">
 	<div style="padding: 20px;">
 		<div id="change_image">
-			<input id="input_image" type="text" onkeyup="$('#aa td').css({'background':'rgba(0,0,0,.5)'}).removeClass('open');
-	   $('#ss td').css({'opacity':1, 'border' : '1px dashed #fff'}); $('#image').css('background-image','url('+$('#input_image').val()+')'); $('#image_preview').css('background-image','url('+$('#input_image').val()+')'); $('#image_preview').css('background-image','url('+$('#input_image').val()+')'); $('#step').val('1'); $('#ss').css('opacity',0); $('#image').css('opacity',0);"  onchange="$('#aa td').css({'background':'rgba(0,0,0,.5)'}).removeClass('open');
+			<input id="input_image" type="text" onkeyup="$('#aa').show(); $('#aa td').css({'background':'rgba(0,0,0,.5)'}).removeClass('open');
+	   $('#ss td').css({'opacity':1, 'border' : '1px dashed #fff'}); $('#image').css('background-image','url('+$('#input_image').val()+')'); $('#image_preview').css('background-image','url('+$('#input_image').val()+')'); $('#image_preview').css('background-image','url('+$('#input_image').val()+')'); $('#step').val('1'); $('#ss').css('opacity',0); $('#image').css('opacity',0);"  onchange="$('#aa').show(); $('#aa td').css({'background':'rgba(0,0,0,.5)'}).removeClass('open');
 	   $('#ss td').css({'opacity':1, 'border' : '1px dashed #fff'});  $('#image').css('background-image','url('+$('#input_image').val()+')'); $('#image_preview').css('background-image','url('+$('#input_image').val()+')'); $('#image_preview').css('background-image','url('+$('#input_image').val()+')'); $('#step').val('1'); $('#ss').css('opacity',0); $('#image').css('opacity',0);">
 			<input type="button" value="เปลี่ยนรูป" ondblclick="change_image();">
 		</div>
@@ -181,8 +181,6 @@ body{
 			}
 		}
 	}
-
-
 
 
 		if($('.open').length == 3){
