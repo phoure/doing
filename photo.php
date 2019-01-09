@@ -7,6 +7,9 @@
 <script src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
 <style type="text/css">
 
+body{
+	background: #000;
+}
 #ss td{
 
 	 width: 10%; text-align: center; font-size: 250%;  background: #333; border:1px dashed #fff; color:#fff;   font-family: 'thaisans_neueextra_light' !important; 
@@ -147,7 +150,7 @@
 	</table>
 </div>
 
-<input value="hidden" id="step" />
+<input type="hidden" id="step" />
 
 
 <script type="text/javascript">
@@ -166,7 +169,7 @@
 		   $('#ss td[data-block='+$(this).data('block')+']').css({'opacity':1, 'border' : '1px dashed #fff', 'background' : '#333'}).removeClass('lock');
 		}
 		else{
-		   $(this).css({'background':'rgba(167,0,0,.5)'}).addClass('lock');
+		   $(this).css({'background':'rgba(167,0,0,.8)'}).addClass('lock');
 		   $('#ss td[data-block='+$(this).data('block')+']').css({'opacity':1, 'border' : '1px dashed #fff', 'background' : '#af0000'}).addClass('lock');
 		}
 	}
