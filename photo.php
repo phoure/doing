@@ -156,13 +156,6 @@ body{
 <script type="text/javascript">
 	$('#aa td').click(function(){
 
-
-		if($('.open').length > 3){
-		   $('#aa .lock').css({'opacity':1, 'border' : '1px dashed #fff', 'background' : 'rgba(0,0,0,.5)'});
-		   $('#ss .lock').css({'opacity':1, 'border' : '1px dashed #fff', 'background' : '#333'});
-			$('.lock').removeClass('lock');
-		}
-
 	if($('#step').val() == '1'){
 		if ( $( this ).hasClass('lock') ) {
 		   $(this).css({'background':'rgba(0,0,0,.5)'}).removeClass('lock');
@@ -188,6 +181,15 @@ body{
 			}
 		}
 	}
+
+
+
+
+		if($('.open').length == 3){
+		   $('#aa .lock').css({'opacity':1, 'border' : '1px dashed #fff', 'background' : 'rgba(0,0,0,.5)'});
+		   $('#ss .lock').css({'opacity':1, 'border' : '1px dashed #fff', 'background' : '#333'});
+			$('.lock').removeClass('lock');
+		}
 });
 
 
