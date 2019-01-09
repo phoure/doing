@@ -157,7 +157,7 @@ body{
 	$('#aa td').click(function(){
 
 
-		if($('.open').length == 3){
+		if($('.open').length == 2){
 		   $('#aa .lock').css({'opacity':1, 'border' : '1px dashed #fff', 'background' : 'rgba(0,0,0,.5)'});
 		   $('#ss .lock').css({'opacity':1, 'border' : '1px dashed #fff', 'background' : '#333'});
 			$('.lock').removeClass('lock');
