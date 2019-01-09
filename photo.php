@@ -24,7 +24,9 @@
 <div style="float:left; width:30%;">
 	<div style="padding: 20px;">
 		<div id="change_image">
-			<input id="input_image" type="text" onkeyup="$('#image_preview').css('background-image','url('+$('#input_image').val()+')');"  onchange="$('#image_preview').css('background-image','url('+$('#input_image').val()+')');">
+			<input id="input_image" type="text" onkeyup="$('#aa td').css({'background':'rgba(0,0,0,.5)'}).removeClass('open');
+	   $('#ss td').css({'opacity':1, 'border' : '1px dashed #fff'}); $('#image').css('background-image','url('+$('#input_image').val()+')'); $('#image_preview').css('background-image','url('+$('#input_image').val()+')'); $('#image_preview').css('background-image','url('+$('#input_image').val()+')'); $('#step').val('1'); $('#ss').css('opacity',0); $('#image').css('opacity',0);"  onchange="$('#aa td').css({'background':'rgba(0,0,0,.5)'}).removeClass('open');
+	   $('#ss td').css({'opacity':1, 'border' : '1px dashed #fff'});  $('#image').css('background-image','url('+$('#input_image').val()+')'); $('#image_preview').css('background-image','url('+$('#input_image').val()+')'); $('#image_preview').css('background-image','url('+$('#input_image').val()+')'); $('#step').val('1'); $('#ss').css('opacity',0); $('#image').css('opacity',0);">
 			<input type="button" value="เปลี่ยนรูป" ondblclick="change_image();">
 		</div>
 
@@ -36,7 +38,7 @@
 
 		</div>
 
-	<table id="aa" style="position: absolute; margin-top:30px; display: none;" border="0" cellspacing="0" cellpadding="0">
+	<table id="aa" style="position: absolute; margin-top:30px; display: noหne;" border="0" cellspacing="0" cellpadding="0">
 		<tr>
 			<td data-block="1">1</td>
 			<td data-block="2">2</td>
@@ -145,17 +147,43 @@
 	</table>
 </div>
 
+<input value="hidden" id="step" />
+
 
 <script type="text/javascript">
-	$('#aa td').click(function()
-{
-	if ( $( this ).hasClass('open') ) {
-	   $(this).css({'background':'rgba(0,0,0,.5)'}).removeClass('open');
-	   $('#ss td[data-block='+$(this).data('block')+']').css({'opacity':1, 'border' : '1px dashed #fff'});
+	$('#aa td').click(function(){
+
+
+		if($('.open').length > 3){
+		   $('#aa .lock').css({'opacity':1, 'border' : '1px dashed #fff', 'background' : 'rgba(0,0,0,.5)'});
+		   $('#ss .lock').css({'opacity':1, 'border' : '1px dashed #fff', 'background' : '#333'});
+			$('.lock').removeClass('lock');
+		}
+
+	if($('#step').val() == '1'){
+		if ( $( this ).hasClass('lock') ) {
+		   $(this).css({'background':'rgba(0,0,0,.5)'}).removeClass('lock');
+		   $('#ss td[data-block='+$(this).data('block')+']').css({'opacity':1, 'border' : '1px dashed #fff', 'background' : '#333'}).removeClass('lock');
+		}
+		else{
+		   $(this).css({'background':'rgba(167,0,0,.5)'}).addClass('lock');
+		   $('#ss td[data-block='+$(this).data('block')+']').css({'opacity':1, 'border' : '1px dashed #fff', 'background' : '#af0000'}).addClass('lock');
+		}
 	}
 	else{
-	   $(this).css({'background':'transparent'}).addClass('open');
-	   $('#ss td[data-block='+$(this).data('block')+']').css({'opacity':0, 'border' : 0});
+
+		if($(this).hasClass('lock')){
+		}
+		else{
+			if ( $( this ).hasClass('open') ) {
+			   $(this).css({'background':'rgba(0,0,0,.5)'}).removeClass('open');
+			   $('#ss td[data-block='+$(this).data('block')+']').css({'opacity':1, 'border' : '1px dashed #fff'});
+			}
+			else{
+			   $(this).css({'background':'transparent'}).addClass('open');
+			   $('#ss td[data-block='+$(this).data('block')+']').css({'opacity':0, 'border' : 0});
+			}
+		}
 	}
 });
 
@@ -173,14 +201,14 @@ $( window ).resize(function() {
 
 
 function change_image(){
-	$('#image').css('background-image','url('+$('#input_image').val()+')');
-	$('#image_preview').css('background-image','url('+$('#input_image').val()+')');
 	$('#change_image').hide();
 	$('#answer_image').show();
+    $('#aa').show();
+     $('#ss').css('opacity',1);
+     $('#image').css('opacity',1);
+     $('#step').val(2);
 
-	   $('#aa td').css({'background':'rgba(0,0,0,.5)'}).removeClass('open');
-	   $('#ss td').css({'opacity':1, 'border' : '1px dashed #fff'});
-	   $('#aa').show();
+	   
 }
 
 function answer(){
