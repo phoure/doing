@@ -12,11 +12,11 @@ body{
 }
 #ss td{
 
-	 width: 10%; text-align: center; font-size: 250%;  background: #333; border:1px dashed #fff; color:#fff;   font-family: 'thaisans_neueextra_light' !important; 
+	 width: 10%; text-align: center; font-size: 4vw;  background: #333; border:1px dashed #fff; color:#fff;   font-family: 'thaisans_neueextra_light' !important; 
 }
 
 #aa td{
-	 width: 10%; text-align: center;   border:1px dashed #fff; background:rgba(0,0,0,.5); color:#fff;   font-family: 'thaisans_neueextra_light' !important; cursor: pointer;
+	 width: 10%; text-align: center; font-size: 1.8vw;  border:1px dashed #fff; background:rgba(0,0,0,.5); color:#fff;   font-family: 'thaisans_neueextra_light' !important; cursor: pointer;
 }
 
 </style>
