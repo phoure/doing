@@ -1,0 +1,872 @@
+@font-face {
+    font-family: 'thaisans_neueblack';
+    src: url('../docs/fonts/thaisansneue-black-webfont.woff2') format('woff2'),
+         url('../docs/fonts/thaisansneue-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'thaisans_neuebold';
+    src: url('../docs/fonts/thaisansneue-bold-webfont.woff2') format('woff2'),
+         url('../docs/fonts/thaisansneue-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'thaisans_neueextra_bold';
+    src: url('../docs/fonts/thaisansneue-extrabold-webfont.woff2') format('woff2'),
+         url('../docs/fonts/thaisansneue-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'thaisans_neueextra_light';
+    src: url('../docs/fonts/thaisansneue-extralight-webfont.woff2') format('woff2'),
+         url('../docs/fonts/thaisansneue-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'thaisans_neuelight';
+    src: url('../docs/fonts/thaisansneue-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'thaisans_neueregular';
+    src: url('../docs/fonts/thaisansneue-regular-webfont.woff2') format('woff2'),
+         url('../docs/fonts/thaisansneue-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'thaisans_neuesemi_bold';
+    src: url('../docs/fonts/thaisansneue-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'thaisans_neueultra_bold';
+    src: url('../docs/fonts/thaisansneue-ultrabold-webfont.woff2') format('woff2'),
+         url('../docs/fonts/thaisansneue-ultrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'thaisans_neueultra_light';
+    src: url('../docs/fonts/thaisansneue-ultralight-webfont.woff2') format('woff2'),
+         url('../docs/fonts/thaisansneue-ultralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media only screen and (max-width : 576px) { 
+
+  #header_space{
+    height: 5px;
+  }
+
+body {
+	margin: 0px;
+	padding:0px 0px 0px 0px;
+	background-color:#fff;
+	height:100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size:100%;
+	color:#000;
+  overflow-x: hidden;
+}
+
+body, td, th, ul, li, a, div, span, button {
+   font-family: 'thaisans_neuelight' !important; 
+}
+
+textarea, input {
+   font-family: 'thaisans_neuelight' !important; 
+  line-height: 2em !important;
+}
+  .body{
+  width:100%;
+  height:auto;
+  padding:20px 10px 10px 10px;
+  }
+
+  .head-page{
+    font-size: 170%;
+    margin-top: 20px;
+  }
+
+  .head-section{
+  font-size: 2em;
+  }
+  
+  .col-form-label{
+    text-align: left;
+  }
+  
+}
+
+@media only screen and (min-width : 576px) and (max-width : 767px) { 
+  #header_space{
+    height: 10px;
+  }
+
+body {
+	margin: 0px;
+	padding:0px 0px 0px 0px;
+	background-color:#fff;
+	height:100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+	background-size:100%;
+	color:#000;
+  overflow-x: hidden;
+}
+
+body, td, th, ul, li, a, div, span, button {
+   font-family: 'thaisans_neuelight' !important;
+}
+
+textarea, input {
+   font-family: 'thaisans_neuelight' !important; 
+  line-height: 2em !important;
+}
+
+  .body{
+  max-width:768px;
+  margin: 0 auto; 
+  padding:80px 10px 10px 10px;
+  }
+
+  #padding_header{
+    height:48px;
+  }
+
+   .head-page{
+    font-size: 200%;
+    margin-top: 20px;
+  }
+
+  
+  .head-section{
+  font-size: 2em;
+  }
+  
+  .col-form-label{
+    text-align: left;
+  }
+  
+	
+}
+
+
+#cover {
+   min-height:100%;
+   position:relative;
+}
+#header {
+}
+#body {
+   padding-bottom:60px;   /* Height of the footer */
+}
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+}
+
+
+@media only screen and (min-width : 768px) and (max-width : 991px) { 
+  #header_space{
+    height: 30px;
+  }
+
+body {
+	margin: 0px;
+	padding:0px 0px 0px 0px;
+	background-color:#fff;
+	height:100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size:100% 100%;
+	color:#000;
+  overflow-x: hidden;
+}
+
+body, td, th, ul, li, a, div, span, button {
+   font-family: 'thaisans_neuelight' !important;
+}
+
+textarea, input {
+   font-family: 'thaisans_neuelight' !important; 
+  line-height: 1.5em !important;
+}
+
+
+  .body{
+  max-width:1023px;
+  margin: 0 auto; 
+  padding:1px 10px 10px 10px;
+  height: 100%;
+  }
+  .head-section{
+    font-size: 36px;
+  }
+  
+  .col-form-label{
+    text-align: left;
+  }
+  
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1199px) { 
+  #header_space{
+    height: 30px;
+  }
+
+	body {
+	margin: 0px;
+	padding:0px 0px 0px 0px;
+	background-color:#fff;
+	height:100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size:100%;
+	color:#000;
+  overflow-x: hidden;
+}
+
+body, td, th, ul, li, a, div, span, button {
+   font-family: 'thaisans_neuelight' !important;
+}
+
+textarea, input {
+   font-family: 'thaisans_neuelight' !important; 
+  line-height: 1.5em !important;
+}
+  .body{
+  max-width:1024px;
+  margin: 0 auto; 
+  padding:20px 10px 10px 10px;
+  height: 100%;
+  }
+
+  #padding_header{
+    height:52px;
+  }
+
+  
+  .head-section{
+    font-size: 40px;
+  }
+
+  .col-form-label{
+    text-align: right;
+  }
+
+}
+
+
+@media only screen and (min-width : 1200px){ 
+  #header_space{
+    height: 30px;
+  }
+
+
+
+html{
+    height:100%
+}
+
+	body {
+	margin: 0px;
+	padding:0px 0px 0px 0px;
+	background-color:#fff;
+	height:100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size:100%;
+	color:#000;
+  overflow-x: hidden;
+}
+
+body, td, th, ul, li, a, div, span, button {
+   font-family: 'thaisans_neuelight' !important;
+}
+
+textarea, input {
+   font-family: 'thaisans_neuelight' !important; 
+  line-height: 1.5em !important;
+}
+
+  .body{
+  width:1200px;
+  margin: 0 auto; 
+  padding:0px 10px 10px 10px;
+  height: 100%;
+  }
+
+  #padding_header{
+    height:52px;
+  }
+
+  .head-section{
+    font-size: 42px;
+  }
+
+  .col-form-label{
+    text-align: right;
+  }
+
+}
+
+
+.swiper-container {       
+ width: 100%;
+ height: 100%;
+ }
+ .swiper-slide {
+	 text-align: center;
+	 display: -webkit-box;
+	 display: -ms-flexbox;
+	 display: -webkit-flex;
+	 display: flex;
+	 -webkit-box-pack: center;
+	 -ms-flex-pack: center;
+	 -webkit-justify-content: center;
+	 justify-content: center;
+	 -webkit-box-align: center;
+	 -ms-flex-align: center;
+	 -webkit-align-items: center;
+	 align-items: center;
+	 width: 100%;    
+	}			
+	
+	
+  .tile {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }	
+
+.tilein {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .tile_photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transition: transform .5s ease-out;
+  }
+
+  .tile_text {
+    position: absolute;
+    right: 0;
+    bottom: 0%;
+    left: 0;
+    cursor: default;
+  }
+
+  
+ .scrolling{
+	   -webkit-overflow-scrolling: touch;
+ }
+ 
+
+ .bg_img{	
+position:fixed;
+width:120%;
+height:120%;
+top:-7%;
+left:-7%;
+z-index:-1;
+background-size:cover !important;
+background-position:center !important;
+opacity:.30;
+ }
+ 
+
+@keyframes zoom {
+   from {
+		 transform: scale(1,1) rotate(0deg);
+		-webkit-transform: scale(1,1) rotate(0deg);
+   }
+   to {
+		transform: scale(2.5,2.5) rotate(30deg) ;
+		-webkit-transform: scale(2.5,2.5) rotate(30deg);
+   }
+}
+
+
+canvas {
+        display:none;
+ }
+
+
+textarea {
+    resize: none;
+}
+
+  .cover{
+    background-size: cover !important;
+  }
+
+a.nav-link{
+  cursor:default;
+}
+
+.sub-topic{
+  font-size: 18px;
+  margin-top: 20px;
+  padding-bottom: 15px;
+}
+
+
+
+.scroll{
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+
+body.modal-open {
+    overflow:hidden;
+}
+
+
+
+  .col-form-explain{
+    color:#aaa;
+    font-size: 13px;
+  }
+
+
+.pointer{
+  cursor:pointer;
+}
+
+
+.input-blank{
+  border:0px transparent solid !important; border-radius: 5px;
+}
+
+
+.form-guide{
+  display: none;
+}
+
+div > .form-guide{
+  padding: 10px 0px 10px 0px;
+  min-height: 20px;
+}
+
+
+
+/* terms */
+
+
+   .name_terms{
+      font-weight: bold;
+    }
+    
+    .terms  tr  td  div:nth-child(1){
+      padding:10px;
+      font-size:14px;
+    }
+
+    .terms-selector{
+      background: #eee;
+    }
+
+    .terms tr  td  div:nth-child(2){
+      padding: 0px 20px 0px 20px;
+      font-size:14px;
+    }
+
+    .terms p{
+       text-indent: 3em;
+    }
+
+    .terms span{
+       text-indent: 0em;
+    }
+
+
+
+/* gallery */
+
+
+
+.thumb_gallery figure{
+  display:none; 
+}
+
+.thumb_gallery img{
+  width:100%;height:100%;
+}
+    
+    
+    .thumb_gallery{
+      width: calc(33.3333% - 5px);
+      height: 0;
+      padding-bottom: 33.3333%; 
+      margin-left:5px;
+      margin-top:5px;
+      float:left;
+    }
+
+    .line-detail{
+      line-height: 1.7em;
+    }
+
+
+
+
+.alert{padding:.4rem 1.25rem; !important;border:1px solid transparent;border-radius:.25rem; display: none;}
+
+.alert-dismissible .close{position:absolute;top:-.75rem;right:-1.25rem;padding:.75rem 1.25rem;color:inherit; margin: 7px 25px 0px;}
+
+.alert-already{color:#5a1e54;background-color:#e8dcee;border-color:#d2a1e9}
+
+.input-primary{
+  border:1px #007bff solid !important; border-radius: 5px;
+}
+
+.input-secondary{
+  border:1px #868e96 solid !important; border-radius: 5px;
+}
+
+.input-error{
+  border:1px #dc3545 solid !important; border-radius: 5px;
+}
+
+.input-already{
+  border:1px #b900a5 solid !important; border-radius: 5px;
+}
+
+.input-success{
+  border:1px #28a745 solid !important; border-radius: 5px;
+}
+
+
+.input-info{
+  border:1px #17a2b8 solid !important; border-radius: 5px;
+}
+
+.input-blank{
+  border:0px transparent solid !important; border-radius: 5px;
+}
+
+
+.input-warning{
+  border:1px #ffc107 solid !important; border-radius: 5px;
+}
+.input-light{
+  border:1px #f8f9fa solid !important; border-radius: 5px;
+}
+
+.input-dark{
+  border:1px #343a40 solid !important; border-radius: 5px;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.f-white{
+  color: #fff !important; 
+}
+
+.f-blue{
+  color: #15b4e3 !important; 
+}
+
+.f-black{
+  color: #000 !important; 
+}
+
+.f-yellow{
+  color: #24b3e1 !important; 
+}
+.f-green{
+  color: #4ec000 !important; 
+}
+.head-col-feature{
+  font-size: 18px; font-family: 'thaisans_neuesemi_bold' !important;
+}
+
+
+.ui.dropdown {
+     max-height : 10 !important;
+}
+
+
+@media only screen and (max-width : 576px) { 
+  .card .header{
+    font-size: 1.1em !important;
+    height: 3em;
+    line-height: 1.5em !important;
+    overflow: hidden;
+  }
+  .card .thumb{
+     width: 100%;
+     padding-bottom: 80%;
+     background-size: cover !important;
+     background-position: center center !important;
+     border-radius: 4px 4px 0px 0px;
+  }
+  .card .business-logo{
+     width:40px;
+     height:40px;
+     background-size:cover !important;
+     border-radius:50px;
+     float: left;
+  }
+  .card .business{
+    font-size: 1.05em !important;
+    height:40px;
+    line-height: 2em;
+    width: calc(100% - 40px);
+    overflow: hidden;
+    float: left;
+    padding-left:10px;
+  }
+  .card .rating{
+    font-size: 0.9em !important;
+    clear:both;
+    padding-top:10px;
+  }
+}
+
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+  .card .header{
+    font-size: .9em !important;
+    height: 2.9em;
+    line-height: 1.4em !important;
+    overflow: hidden;
+  }
+  .card .thumb{
+     width: 100%;
+     padding-bottom: 80%;
+     background-size: cover !important;
+     background-position: center center !important;
+     border-radius: 4px 4px 0px 0px;
+  }
+  .card .business-logo{
+     width:30px;
+     height:30px;
+     background-size:cover !important;
+     border-radius:50px;
+     float: left;
+  }
+  .card .business{
+    font-size: 0.9em !important;
+    height:30px;
+    line-height: 1.7em;
+    width: calc(100% - 30px);
+    overflow: hidden;
+    float: left;
+    padding-left:10px;
+  }
+  .card .rating{
+    font-size: 0.9em !important;
+    clear:both;
+    padding-top:10px;
+  }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) { 
+  .card .header{
+    font-size: .9em !important;
+    height: 2.9em;
+    line-height: 1.5em !important;
+    overflow: hidden;
+  }
+  .card .thumb{
+     width: 100%;
+     padding-bottom: 80%;
+     background-size: cover !important;
+     background-position: center center !important;
+     border-radius: 4px 4px 0px 0px;
+  }
+  .card .business-logo{
+     width:30px;
+     height:30px;
+     background-size:cover !important;
+     border-radius:50px;
+     float: left;
+  }
+  .card .business{
+    font-size: 0.95em !important;
+    height:30px;
+    line-height: 1.6em;
+    width: calc(100% - 30px);
+    overflow: hidden;
+    float: left;
+    padding-left:10px;
+  }
+  .card .rating{
+    font-size: 0.95em !important;
+    clear:both;
+    padding-top:10px;
+  }
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1199px) { 
+  .card .header{
+    font-size: 1em !important;
+    height: 3em;
+    line-height: 1.5em !important;
+    overflow: hidden;
+  }
+  .card .thumb{
+     width: 100%;
+     padding-bottom: 80%;
+     background-size: cover !important;
+     background-position: center center !important;
+     border-radius: 4px 4px 0px 0px;
+  }
+  .card .business-logo{
+     width:30px;
+     height:30px;
+     background-size:cover !important;
+     border-radius:50px;
+     float: left;
+  }
+  .card .business{
+    font-size: 1em !important;
+    height:30px;
+    line-height: 1.5em;
+    width: calc(100% - 30px);
+    overflow: hidden;
+    float: left;
+    padding-left:10px;
+  }
+  .card .rating{
+    font-size: 0.95em !important;
+    clear:both;
+    padding-top:10px;
+  }
+}
+
+@media only screen and (min-width : 1200px){ 
+  .card .header{
+    font-size: 1em !important;
+    height: 3em;
+    line-height: 1.5em !important;
+    overflow: hidden;
+  }
+  .card .thumb{
+     width: 100%;
+     padding-bottom: 80%;
+     background-size: cover !important;
+     background-position: center center !important;
+     border-radius: 4px 4px 0px 0px;
+  }
+  .card .business-logo{
+     width:30px;
+     height:30px;
+     background-size:cover !important;
+     border-radius:50px;
+     float: left;
+  }
+  .card .business{
+    font-size: 1em !important;
+    height:30px;
+    line-height: 1.5em;
+    width: calc(100% - 30px);
+    overflow: hidden;
+    float: left;
+    padding-left:10px;
+  }
+  .card .rating{
+    font-size: 0.95em !important;
+    clear:both;
+    padding-top:10px;
+  }
+}
+
+
+
+  a{
+      text-decoration: none !important;
+      color:#000;
+  }
+
+  a:focus{
+      text-decoration: none !important;
+  }
+
+  a:active{
+      text-decoration: none !important;
+  }
+
+  a.cards{
+    color: #fff;
+  }
+
+
+    .underline{
+      text-decoration: underline;
+    }
+
+
+    
+.check_step.checked{
+  color:green;
+}
+
+.check_step.warn{
+  color:#fdc401;
+}
+
+.check_step.already{
+  color:#b900a5;
+}
+
+.check_step.uncheck{
+  color:#eee;
+}
+
+.menu-step{
+  padding-left:32px;
+}
+
+
+.ui-loader{
+  display: none;
+}
+
+  .vertical-center {
+    min-height: 100%;  
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
