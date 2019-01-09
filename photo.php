@@ -41,7 +41,7 @@ body{
 
 		</div>
 
-	<table id="aa" style="position: absolute; margin-top:30px; display: noหne;" border="0" cellspacing="0" cellpadding="0">
+	<table id="aa" style="position: absolute; margin-top:30px; display: none;" border="0" cellspacing="0" cellpadding="0">
 		<tr>
 			<td data-block="1">1</td>
 			<td data-block="2">2</td>
