@@ -184,7 +184,7 @@ body{
 	}
 
 
-		if($('.open').length == 3){
+		if($('.open').length == 5){
 		   $('#aa .lock').css({'opacity':1, 'border' : '1px dashed #fff', 'background' : 'rgba(0,0,0,.5)'});
 		   $('#ss .lock').css({'background': '#333'});
 
